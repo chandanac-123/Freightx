@@ -1,9 +1,14 @@
 import { header_options } from "@/enum/header_options";
+import { getPathname } from "@/utility/getPathname";
 import { images } from "@/utility/images";
 import Image from "next/image";
 import MobileHeader from "./MobileHeader";
 
 export default function Header() {
+  const { pathname } = getPathname();
+
+  console.log("pathname", pathname);
+
   return (
     <header className="h-24 xl:border-b border-surface-border flex items-center gap-16">
       <a href="/" className="grow xl:grow-0">
@@ -18,13 +23,18 @@ export default function Header() {
       </a>
       <div className="grow hidden xl:flex items-center gap-16 h-full ">
         {header_options.map((item) => (
-          <span
-            className="text-lg h-full group font-semibold flex items-center gap-2 hover:cursor-pointer"
+          <a
             key={item.id}
+            href={item.url}
+            className="text-lg h-full group font-semibold flex items-center gap-2 hover:cursor-pointer"
           >
             <span className="w-7 h-7 flex items-center justify-center">
               <Image
-                className="w-7 h-7 -ml-5 group-hover:ml-0 opacity-0 invisible group-hover:opacity-100 group-hover:visible transition-all duration-500"
+                className={`w-7 h-7 group-hover:ml-0 ${
+                  pathname === item.url
+                    ? "visible"
+                    : "invisible opacity-0 -ml-5"
+                } group-hover:opacity-100 group-hover:visible transition-all duration-500`}
                 alt="Hover Icon"
                 src={images.hover_icon}
                 width={28}
@@ -33,7 +43,7 @@ export default function Header() {
               />
             </span>
             <span className="text-text-primary">{item.title}</span>
-          </span>
+          </a>
         ))}
       </div>
       <span className="text-lg h-full group cursor-pointer font-semibold whitespace-nowrap border-l border-surface-border hidden xl:flex items-center gap-2 px-10">

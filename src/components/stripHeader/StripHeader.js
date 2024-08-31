@@ -4,9 +4,10 @@ import Image from "next/image";
 
 export default function StripHeader() {
   return (
-    <div className="hidden bg-text-primary xl:flex items-center gap-20 px-5 h-10">
+    <div className="hidden bg-surface-primary xl:flex items-center gap-20 px-5 h-9">
       <a
         href={`tel:${user_details.phone_number}`}
+        target="_blank"
         className="flex items-center gap-2 group"
       >
         <Image
@@ -23,6 +24,7 @@ export default function StripHeader() {
       </a>
       <a
         href={`mailto:${user_details.email}`}
+        target="_blank"
         className="flex items-center gap-2 group"
       >
         <Image
@@ -39,6 +41,7 @@ export default function StripHeader() {
       </a>
       <a
         href={`http://maps.google.com/?q=1200 ${user_details.address}`}
+        target="_blank"
         className="flex ml-auto items-center gap-2 group"
       >
         <Image

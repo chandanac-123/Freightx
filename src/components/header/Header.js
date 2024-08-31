@@ -5,12 +5,12 @@ import MobileHeader from "./MobileHeader";
 
 export default function Header() {
   return (
-    <header className="h-20 xl:border-b-2 border-gray-300 flex items-center gap-16">
-      <a href="#" className="grow">
+    <header className="h-24 xl:border-b border-surface-border flex items-center gap-16">
+      <a href="/" className="grow xl:grow-0">
         <Image
           className="h-10 w-28 ml-5"
           alt="Logo"
-          src={images.logo}
+          src={images.logo_dark}
           width={112}
           height={40}
           priority
@@ -36,7 +36,7 @@ export default function Header() {
           </span>
         ))}
       </div>
-      <span className="text-lg h-full group cursor-pointer font-semibold whitespace-nowrap border-l-2 border-gray-300 hidden xl:flex items-center gap-2 px-10">
+      <span className="text-lg h-full group cursor-pointer font-semibold whitespace-nowrap border-l border-surface-border hidden xl:flex items-center gap-2 px-10">
         <Image
           className="h-4 w-4 group-hover:rotate-90 duration-500"
           alt="Add Icon"

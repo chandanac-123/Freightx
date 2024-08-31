@@ -6,7 +6,7 @@ import Image from "next/image";
 export default function Footer() {
   return (
     <div className="bg-surface-primary grid grid-cols-1 md:grid-cols-2 md:gap-x-20 lg:gap-x-0 xl:grid-cols-4 py-[60px] px-[40px] sm:py-[80px] sm:px-[60px] lg:py-0 lg:px-0">
-      <div className="flex flex-col justify-between gap-2 pb-[20px] pt-[40px] sm:pb-[40px] lg:px-[60px] lg:py-[140px] xl:border-r xl:border-footer-border">
+      <div className="flex flex-col justify-between gap-2 pb-[20px] pt-[40px] lg:px-[50px] lg:py-[140px] xl:border-r xl:border-footer-border">
         <div className="flex flex-col gap-4">
           <Image
             alt="Logo"
@@ -45,7 +45,7 @@ export default function Footer() {
           </h3>
         </div>
       </div>
-      <div className="flex flex-col gap-2 pb-[20px] pt-[40px] lg:px-[60px] lg:py-[140px] xl:border-r xl:border-footer-border">
+      <div className="flex flex-col gap-2 pb-[20px] pt-[40px] lg:px-[50px] lg:py-[140px] xl:border-r xl:border-footer-border">
         <h1 className="text-white font-semibold text-xl tracking-wide flex items-center gap-2 whitespace-nowrap">
           <Image
             alt="Hover Icon"
@@ -69,7 +69,7 @@ export default function Footer() {
           ))}
         </div>
       </div>
-      <div className="flex flex-col gap-2 pb-[20px] pt-[40px] lg:px-[60px] lg:py-[140px] xl:border-r xl:border-footer-border">
+      <div className="flex flex-col gap-2 pb-[20px] pt-[40px] lg:px-[50px] lg:py-[140px] xl:border-r xl:border-footer-border">
         <h1 className="text-white font-semibold text-xl tracking-wide flex items-center gap-2 whitespace-nowrap">
           <Image
             alt="Hover Icon"
@@ -93,7 +93,7 @@ export default function Footer() {
           ))}
         </div>
       </div>
-      <div className="flex flex-col gap-2 pb-[20px] pt-[40px] lg:px-[60px] lg:py-[140px]">
+      <div className="flex flex-col gap-2 pb-[20px] pt-[40px] lg:px-[50px] lg:py-[140px]">
         <h1 className="text-white font-semibold text-xl tracking-wide flex items-center gap-2 whitespace-nowrap">
           <Image
             alt="Hover Icon"

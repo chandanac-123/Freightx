@@ -11,6 +11,9 @@ export const metadata = {
 export default function RootLayout({ children }) {
   return (
     <html lang="en">
+      <head>
+        <link rel="icon" href="./icon.ico" sizes="any" />
+      </head>
       <body className={inte_tight.className}>{children}</body>
     </html>
   );

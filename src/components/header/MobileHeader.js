@@ -14,7 +14,7 @@ export default function MobileHeader() {
       <div className="flex xl:hidden relative bg-surface-secondary h-full items-center justify-center w-32">
         <Hamburger color="white" toggled={isOpen} toggle={setOpen} />
         <div
-          className="w-screen mt-10 pb-10 bg-white pl-5 absolute overflow-hidden origin-top top-full transition-transform right-0 flex flex-col gap-5 border-b border-surface-border"
+          className="w-screen z-10 p-10 bg-white pl-5 absolute overflow-hidden origin-top top-full transition-transform right-0 flex flex-col gap-5 border-b border-surface-border"
           style={{ transform: isOpen ? "scaleY(1)" : "scaleY(0)" }}
         >
           {header_options.map((item) => (

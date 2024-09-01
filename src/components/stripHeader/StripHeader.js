@@ -4,7 +4,7 @@ import Image from "next/image";
 
 export default function StripHeader() {
   return (
-    <div className="hidden bg-surface-primary xl:flex items-center gap-20 px-5 h-9">
+    <div className="hidden bg-surface-primary xl:flex items-center gap-20 px-5 h-9 font-sora">
       <a
         href={`tel:${user_details.phone_number}`}
         target="_blank"

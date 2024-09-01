@@ -10,7 +10,7 @@ export default function Header() {
   console.log("pathname", pathname);
 
   return (
-    <header className="h-24 xl:border-b border-surface-border flex items-center gap-16">
+    <header className="h-24 xl:border-b border-surface-border flex items-center gap-16 font-inter">
       <a href="/" className="grow xl:grow-0">
         <Image
           className="h-10 w-28 ml-5"
@@ -21,7 +21,7 @@ export default function Header() {
           priority
         />
       </a>
-      <div className="grow hidden xl:flex items-center gap-16 h-full ">
+      <div className="grow hidden xl:flex items-center gap-16 h-full">
         {header_options.map((item) => (
           <a
             key={item.id}

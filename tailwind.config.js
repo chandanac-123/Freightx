@@ -16,6 +16,10 @@ module.exports = {
         "surface-border": "#ccc",
         "footer-border": "#316877",
       },
+      fontFamily: {
+        inter: ["var(--font-inter)"],
+        sora: ["var(--font-sora)"],
+      },
     },
   },
   plugins: [],

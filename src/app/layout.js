@@ -1,7 +1,19 @@
-import { Inter_Tight } from "next/font/google";
+import Header from "@/components/header/Header";
+import StripHeader from "@/components/stripHeader/StripHeader";
+import { Inter_Tight, Sora } from "next/font/google";
 import "./globals.css";
 
-const inte_tight = Inter_Tight({ subsets: ["latin"] });
+const inter_tight = Inter_Tight({
+  subsets: ["latin"],
+  display: "swap",
+  variable: "--font-inter",
+});
+
+const sora = Sora({
+  subsets: ["latin"],
+  display: "swap",
+  variable: "--font-sora",
+});
 
 export const metadata = {
   title: "FreightX",
@@ -14,7 +26,11 @@ export default function RootLayout({ children }) {
       <head>
         <link rel="icon" href="./icon.ico" sizes="any" />
       </head>
-      <body className={inte_tight.className}>{children}</body>
+      <body className={`${inter_tight.variable} ${sora.variable}`}>
+        <StripHeader />
+        <Header />
+        {children}
+      </body>
     </html>
   );
 }

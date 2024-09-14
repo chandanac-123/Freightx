@@ -16,7 +16,7 @@ export default function Footer() {
             className="h-16 w-44"
             priority
           />
-          <h3 className="text-text-tertiary tracking-wider">
+          <h3 className="text-text-tertiary tracking-wider font-sora">
             Lorem ipsum dolor, sit amet consectetur elit.
           </h3>
         </div>
@@ -40,13 +40,13 @@ export default function Footer() {
               </a>
             ))}
           </div>
-          <h3 className="text-text-tertiary tracking-wider text-sm">
+          <h3 className="text-text-tertiary tracking-wider text-sm font-sora">
             All Rights Reserved © 2024 Qode Interactive
           </h3>
         </div>
       </div>
       <div className="flex flex-col gap-2 pb-[20px] pt-[40px] lg:px-[50px] lg:py-[140px] xl:border-r xl:border-footer-border">
-        <h1 className="text-white font-semibold text-xl tracking-wide flex items-center gap-2 whitespace-nowrap">
+        <h1 className="text-white font-semibold text-xl tracking-wide flex items-center gap-2 whitespace-nowrap font-inter">
           <Image
             alt="Hover Icon"
             src={images.hover_icon}
@@ -56,7 +56,7 @@ export default function Footer() {
           />
           {footer_content.content_1.title}
         </h1>
-        <div className="mt-4 flex flex-col gap-4 ml-2">
+        <div className="mt-4 flex flex-col gap-4 ml-2 font-sora">
           {footer_content.content_1.sub_titles.map((item) => (
             <span key={item.id}>
               <a
@@ -70,7 +70,7 @@ export default function Footer() {
         </div>
       </div>
       <div className="flex flex-col gap-2 pb-[20px] pt-[40px] lg:px-[50px] lg:py-[140px] xl:border-r xl:border-footer-border">
-        <h1 className="text-white font-semibold text-xl tracking-wide flex items-center gap-2 whitespace-nowrap">
+        <h1 className="text-white font-semibold text-xl tracking-wide flex items-center gap-2 whitespace-nowrap font-inter">
           <Image
             alt="Hover Icon"
             src={images.hover_icon}
@@ -80,7 +80,7 @@ export default function Footer() {
           />
           {footer_content.content_2.title}
         </h1>
-        <div className="mt-4 flex flex-col gap-4 ml-2">
+        <div className="mt-4 flex flex-col gap-4 ml-2 font-sora">
           {footer_content.content_2.sub_titles.map((item) => (
             <span key={item.id}>
               <a
@@ -94,7 +94,7 @@ export default function Footer() {
         </div>
       </div>
       <div className="flex flex-col gap-2 pb-[20px] pt-[40px] lg:px-[50px] lg:py-[140px]">
-        <h1 className="text-white font-semibold text-xl tracking-wide flex items-center gap-2 whitespace-nowrap">
+        <h1 className="text-white font-semibold text-xl tracking-wide flex items-center gap-2 whitespace-nowrap font-inter">
           <Image
             alt="Hover Icon"
             src={images.hover_icon}
@@ -104,7 +104,7 @@ export default function Footer() {
           />
           {footer_content.content_3.title}
         </h1>
-        <div className="mt-4 flex flex-col gap-4 ml-2">
+        <div className="mt-4 flex flex-col gap-4 ml-2 font-sora">
           {footer_content.content_3.sub_titles.map((item) => (
             <span key={item.id}>
               <a

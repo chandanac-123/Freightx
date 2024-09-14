@@ -9,10 +9,10 @@ module.exports = {
     extend: {
       colors: {
         "text-primary": "#232323",
-        "text-secondary": "orange",
+        "text-secondary": "#366366",
         "text-tertiary": "#b8ced4",
         "surface-primary": "#0f313a",
-        "surface-secondary": "#ff6900",
+        "surface-secondary": "#366366",
         "surface-border": "#ccc",
         "footer-border": "#316877",
       },

@@ -1,3 +1,4 @@
+import Footer from "@/components/footer/footer";
 import Header from "@/components/header/Header";
 import StripHeader from "@/components/stripHeader/StripHeader";
 import { Inter_Tight, Sora } from "next/font/google";
@@ -30,6 +31,7 @@ export default function RootLayout({ children }) {
         <StripHeader />
         <Header />
         {children}
+        <Footer />
       </body>
     </html>
   );

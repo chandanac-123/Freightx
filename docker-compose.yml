@@ -1,0 +1,19 @@
+name: flaviant-console
+services:
+  web-app:
+    container_name: freightx-web
+    env_file:
+      - ${DOCKER_ENV_FILE:-./.env}
+    build:
+      dockerfile: ./Dockerfile
+    expose:
+      - "${SERVICE_PORT}"
+    ports:
+      - "${HOST_PORT}:${SERVICE_PORT}"
+    networks:
+      nginx:
+        aliases:
+          - freightx
+networks:
+  nginx:
+    external: true

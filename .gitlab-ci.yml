@@ -1,0 +1,24 @@
+image:
+  name: alpine:latest
+
+stages:
+  - build
+
+before_script:
+  - mkdir -p ~/.ssh
+  - 'which ssh-agent || ( apk add --no-cache openssh )'
+  - apk add --no-cache bash  # Add bash to enable compatibility with process substitution
+  - eval $(ssh-agent -s)
+  - echo "$SSH_PRIVATE_KEY" | ssh-add -  # Use a pipe instead of process substitution
+  - '[[ -f /.dockerenv ]] && echo -e "Host *\n\tStrictHostKeyChecking no\n\n" > ~/.ssh/config'
+
+build:development:
+  stage: build
+  only:
+    - main
+  script:
+    - echo "Dev Build starting.."
+    - apk update
+    - apk add rsync
+    - rsync -av -r ./* root@backslashgo.com:freightx/freightx-web
+    - ssh root@backslashgo.com 'cd freightx/freightx-web && DOCKER_NETWORK_ALIAS=freightx-console DOCKER_ENV_FILE=./.env docker compose --env-file ./.env -f ./docker-compose.yml up --build -d'

@@ -22,6 +22,7 @@ export default function Home() {
         <GetInTouch/>
         <MovigBanner/>
         <ClientSection/>
+        
     </main>
   );
 }

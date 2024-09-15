@@ -12,6 +12,18 @@ import instagram_icon from "../../public/instagram.svg";
 import linkdin_icon from "../../public/linkdin.svg";
 import location_logo from "../../public/location.svg";
 import phone_icon from "../../public/phone.svg";
+import banner_1 from "../../public/banner_1.jpg";
+import banner_2 from "../../public/banner_2.jpg";
+import banner_3 from "../../public/banner_3.jpg";
+import info from "../../public/info_img.jpg";
+import ocean from "../../public/ocean.svg";
+import sample from "../../public/sample.jpg";
+import ship from "../../public/ship.jpg";
+
+import team_1 from "../../public/team-1.jpg";
+import team_2 from "../../public/team-2.jpg";
+import team_3 from "../../public/team-3.jpg";
+
 
 export const images = {
   logo_light,
@@ -25,4 +37,14 @@ export const images = {
   facebook_icon,
   instagram_icon,
   about_main,
+  banner_1,
+  banner_2,
+  banner_3,
+  info,
+  ocean,
+  sample,
+  ship,
+  team_1,
+  team_2,
+  team_3,
 };

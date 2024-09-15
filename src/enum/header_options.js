@@ -12,6 +12,6 @@ export const header_options = [
   {
     id: 3,
     title: "Contact.",
-    url: "/contact",
+    url: "/contact-us",
   },
 ];

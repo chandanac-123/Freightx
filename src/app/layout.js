@@ -1,7 +1,8 @@
-import Header from "@/components/header/Header";
-import StripHeader from "@/components/stripHeader/StripHeader";
+import Footer from "@/components/footer/footer";
 import { Inter_Tight, Sora } from "next/font/google";
 import "./globals.css";
+import Header from "@/components/layout/header/Header";
+import StripHeader from "@/components/layout/stripHeader/StripHeader";
 
 const inter_tight = Inter_Tight({
   subsets: ["latin"],
@@ -30,6 +31,7 @@ export default function RootLayout({ children }) {
         <StripHeader />
         <Header />
         {children}
+        <Footer />
       </body>
     </html>
   );

@@ -15,7 +15,7 @@ before_script:
 build:development:
   stage: build
   only:
-    - main
+    - dev
   script:
     - echo "Dev Build starting.."
     - apk update

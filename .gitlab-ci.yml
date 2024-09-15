@@ -22,3 +22,4 @@ build:development:
     - apk add rsync
     - rsync -av -r ./* root@backslashgo.com:freightx/freightx-web
     - ssh root@backslashgo.com 'cd freightx/freightx-web && DOCKER_NETWORK_ALIAS=freightx-console DOCKER_ENV_FILE=./.env docker compose --env-file ./.env -f ./docker-compose.yml up --build -d'
+    

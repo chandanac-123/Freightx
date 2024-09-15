@@ -26,6 +26,8 @@ const ClientSection = () => {
   ];
 
   return (
+    <>
+    
     <section className="w-full">
       <div className="grid grid-cols-2 tablet-lg:grid-cols-4 ">
         {data?.map((item) => {
@@ -33,7 +35,9 @@ const ClientSection = () => {
         })}
       </div>
     </section>
+    </>
   );
+  
 };
 
 export default ClientSection;

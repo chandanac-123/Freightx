@@ -2,6 +2,7 @@ import { header_options } from "@/enum/header_options";
 import { images } from "@/utility/images";
 import Image from "next/image";
 import MobileHeader from "./MobileHeader";
+import Link from "next/link";
 
 export default function Header() {
   return (
@@ -13,7 +14,7 @@ export default function Header() {
         <Image
           className="h-10 w-28 "
           alt="Logo"
-          src={images.logo}
+          src={images.logo_dark}
           width={112}
           height={40}
           priority
@@ -21,9 +22,10 @@ export default function Header() {
       </a>
       <div className="grow hidden xl:flex items-center gap-16 h-full ">
         {header_options.map((item) => (
-          <span
+          <Link
             className="text-lg h-full group font-semibold flex items-center gap-2 hover:cursor-pointer"
             key={item.id}
+            href={item.url}
           >
             <span className="w-7 h-7 flex items-center justify-center">
               <Image
@@ -36,7 +38,7 @@ export default function Header() {
               />
             </span>
             <span className="text-text-primary">{item.title}</span>
-          </span>
+          </Link>
         ))}
       </div>
       <span className="text-lg h-full group cursor-pointer font-semibold whitespace-nowrap border-l-2 border-gray-300 hidden xl:flex items-center gap-2 px-10">

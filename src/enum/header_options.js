@@ -2,17 +2,16 @@ export const header_options = [
   {
     id: 1,
     title: "Home.",
+    url: "/",
   },
   {
     id: 2,
-    title: "Pages.",
+    title: "About.",
+    url: "/about",
   },
   {
     id: 3,
-    title: "Services.",
-  },
-  {
-    id: 4,
     title: "Contact.",
+    url: "/contact-us",
   },
 ];

@@ -5,9 +5,9 @@ import React from "react";
 
 const Info = () => {
   return (
-    <div className=" py-24  tablet:py-36 flex  flex-col-reverse tablet-lg:flex-row items-center gap-6">
+    <div className=" py-16  tablet:py-16 flex  flex-col-reverse tablet-lg:flex-row items-center gap-6">
       <div className="tablet-lg:w-1/2 px-6  tablet-lg:pl-20 laptop-lg:pl-32 desktop:pl-40 4k:pl-56">
-        <h1 className=" text-5xl laptop:text-7xl font-semibold mb-6 text-dark max-w-[700px] ">
+        <h1 className=" text-4xl laptop:text-5xl font-semibold mb-6 text-dark max-w-[500px] ">
           Fast Delivery And Secure Packages
         </h1>
         <div className="flex gap-6">

@@ -1,0 +1,114 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+body {
+  box-sizing: border-box;
+}
+
+/* Define initial values for each count */
+@property --services-num {
+  syntax: "<integer>";
+  initial-value: 1300;
+  inherits: false;
+}
+
+@property --semitrailers-num {
+  syntax: "<integer>";
+  initial-value: 500;
+  inherits: false;
+}
+
+@property --customers-num {
+  syntax: "<integer>";
+  initial-value: 3000;
+  inherits: false;
+}
+
+@property --air-transportations-num {
+  syntax: "<integer>";
+  initial-value: 1000;
+  inherits: false;
+}
+
+/* Set counter-reset for each ID */
+#services-count {
+  animation: services-counter 10s ease-in-out forwards;
+  counter-reset: services-num var(--services-num);
+}
+
+#semitrailers-count {
+  animation: semitrailers-counter 10s ease-in-out forwards;
+  counter-reset: semitrailers-num var(--semitrailers-num);
+}
+
+#customers-count {
+  animation: customers-counter 10s ease-in-out forwards;
+  counter-reset: customers-num var(--customers-num);
+}
+
+#air-transportations-count {
+  animation: air-transportations-counter 10s ease-in-out forwards;
+  counter-reset: air-transportations-num var(--air-transportations-num);
+}
+
+/* Define content for each counter with + and k */
+#services-count::after {
+  content: "+" counter(services-num) "k";
+}
+
+#semitrailers-count::after {
+  content: "+" counter(semitrailers-num) "k";
+}
+
+#customers-count::after {
+  content: "+" counter(customers-num) "k";
+}
+
+#air-transportations-count::after {
+  content: "+" counter(air-transportations-num) "k";
+}
+
+/* Define animations for each counter */
+@keyframes services-counter {
+  from {
+    --services-num: 1300;
+  }
+  to {
+    --services-num: 2000;
+  }
+}
+
+@keyframes semitrailers-counter {
+  from {
+    --semitrailers-num: 500;
+  }
+  to {
+    --semitrailers-num: 1200;
+  }
+}
+
+@keyframes customers-counter {
+  from {
+    --customers-num: 3000;
+  }
+  to {
+    --customers-num: 5000;
+  }
+}
+
+@keyframes air-transportations-counter {
+  from {
+    --air-transportations-num: 1000;
+  }
+  to {
+    --air-transportations-num: 1500;
+  }
+}
+
+.bg-paralax {
+  background-image: url("../../public/sample.jpg");
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
+}

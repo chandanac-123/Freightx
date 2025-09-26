@@ -24,6 +24,15 @@ import team_1 from "../../public/team-1.jpg";
 import team_2 from "../../public/team-2.jpg";
 import team_3 from "../../public/team-3.jpg";
 
+import air_transport from "../../public/air.jpg"
+import ocean_transport from "../../public/ocean.jpg"
+import road_transport from "../../public/road.jpg"
+import custome_clear from "../../public/custome.jpg"
+import projects from "../../public/projects.jpg"
+import warehouse from "../../public/warehousing.jpg"
+import logo from "../../public/logo.jpg"
+import logo2 from "../../public/logo2.png"
+
 
 export const images = {
   logo_light,
@@ -47,4 +56,12 @@ export const images = {
   team_1,
   team_2,
   team_3,
+  air_transport,
+  ocean_transport,
+  road_transport,
+  custome_clear,
+  projects,
+  warehouse,
+  logo,
+  logo2,
 };

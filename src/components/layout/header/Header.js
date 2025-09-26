@@ -12,11 +12,10 @@ export default function Header() {
       
       <a href="#" className="grow">
         <Image
-          className="h-10 w-28 "
           alt="Logo"
-          src={images.logo_dark}
-          width={112}
-          height={40}
+          src={images.logo}
+          width={300}
+        
           priority
         />
       </a>

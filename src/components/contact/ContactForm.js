@@ -7,32 +7,54 @@ const ContactForm = () => {
         <div className="flex-1 w-full">
           <h1 className=" text-4xl sm:text-6xl font-medium mb-3">Contact Us</h1>
           <p className="max-w-[400px] mb-12 text-gray-600">
-            Lorem ipsum dolor sit amet, cons ectetur adipiscing elitull am,
-            velit rutrum dictum lobortis turpis.
+            FreightX Shipping Inc - Neutral Logistic Solutions
           </p>
 
-          <div>
-            <p className=" font-medium mb-1">Support Centar</p>
-            <p>
-              <a
-                href="mailto:info@example.com"
-                className="text-2xl font-medium"
-              >
-                info@example.com
-              </a>
-            </p>
-          </div>
-          <div className="mt-6 flex flex-col sm:flex-row sm:items-center gap-6">
-            <div className="max-w-52">
-              <p className="font-medium text-lg mb-1">Our Location</p>
-              <p className="max-w-52">
-                West 21th Street, New York, NY City 10010
+          <div className="space-y-2">
+            {/* Location */}
+            <div className="flex flex-col sm:flex-row sm:items-start gap-6">
+              <div className="sm:w-52">
+                <p className="font-medium text-lg">Our Location</p>
+              </div>
+              <p className="max-w-xs text-gray-700">
+                Mallory Ln, Suite-100
+                <br />
+                Franklin, Tennessee, 37215, USA
               </p>
             </div>
-            <div className="max-w-52">
-              <p className="font-medium text-lg mb-1">Write to us</p>
-              <a href="mailto:info@example.com">info@example.com</a>
-              <p>+17125425685</p>
+
+            {/* Phone */}
+            <div className="flex flex-col sm:flex-row sm:items-start sm:gap-6 gap-2">
+              <div className="sm:w-52">
+                <p className="font-medium text-lg">Phone</p>
+              </div>
+              <p className="max-w-xs text-gray-700">(615) 613-8680</p>
+            </div>
+
+            {/* Sales */}
+            <div className="flex flex-col sm:flex-row sm:items-start sm:gap-6 gap-2">
+              <div className="sm:w-52">
+                <p className="font-medium text-lg">Sales</p>
+              </div>
+              <p className="max-w-xs text-gray-700">
+                g.gaulbert@freightxusa.com
+              </p>
+            </div>
+
+            {/* Customer Service */}
+            <div className="flex flex-col sm:flex-row sm:items-start sm:gap-6 gap-2">
+              <div className="sm:w-52">
+                <p className="font-medium text-lg">Customer Service</p>
+              </div>
+              <p className="max-w-xs text-gray-700">nikki@freightxusa.com</p>
+            </div>
+
+            {/* Management */}
+            <div className="flex flex-col sm:flex-row sm:items-start sm:gap-6 gap-2">
+              <div className="sm:w-52">
+                <p className="font-medium text-lg">Management</p>
+              </div>
+              <p className="max-w-xs text-gray-700">james@freightxusa.com</p>
             </div>
           </div>
         </div>

@@ -21,7 +21,7 @@ export default function Home() {
         <Solution/>
         <GetInTouch/>
         <MovigBanner/>
-        <ClientSection/>
+        {/* <ClientSection/> */}
         
     </main>
   );

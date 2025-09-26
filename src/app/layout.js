@@ -28,7 +28,7 @@ export default function RootLayout({ children }) {
         <link rel="icon" href="./icon.ico" sizes="any" />
       </head>
       <body className={`${inter_tight.variable} ${sora.variable}`}>
-        <StripHeader />
+        {/* <StripHeader /> */}
         <Header />
         {children}
         <Footer />

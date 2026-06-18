@@ -17,7 +17,7 @@ const GetInTouch = () => {
         </div>
 
         <div className="flex-1 w-full px-4 md:px-24">
-            <h1 className="text-4xl mb-6">
+            <h1 className="text-4xl mb-6 ">
             Get in touch
 
             </h1>

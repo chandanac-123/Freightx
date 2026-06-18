@@ -28,7 +28,7 @@ const AboutCoursole = () => {
     {
       id: 2,
       component: (
-        <div className="w-full flex items-end h-full p-12 tablet-lg:p-36    relative container">
+        <div className="w-full flex items-end h-full p-12 tablet-lg:p-36  relative container">
           <Image
             src={images.banner_2}
             layout="fill"

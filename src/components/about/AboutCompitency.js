@@ -44,7 +44,7 @@ const CoreValuesSection = () => {
     <section className="container max-w-screen-4k px-6 py-16 md:px-12 xl:px-12">
       {/* Section Heading */}
       <div className="text-left mb-8">
-        <h1 className="text-text-primary font-semibold text-4xl leading-[52px] md:leading-[48px] xl:text-5xl font-inter whitespace-pre-line">
+        <h1 className="text-text-primary font-sora font-semibold text-4xl leading-[52px] md:leading-[48px] xl:text-5xl font-inter whitespace-pre-line">
           Competencies
         </h1>
       </div>
@@ -62,12 +62,12 @@ const CoreValuesSection = () => {
             </div>
 
             {/* Title */}
-            <h3 className="text-lg font-semibold text-gray-900 mb-2">
+            <h3 className="text-lg font-semibold text-gray-900 mb-2 font-inter">
               {item.title}
             </h3>
 
             {/* Description */}
-            <p className="text-gray-600 text-sm leading-relaxed">
+            <p className="text-gray-600 text-sm leading-relaxed font-inter">
               {item.description}
             </p>
           </div>

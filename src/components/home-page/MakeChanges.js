@@ -16,7 +16,7 @@ const MakeChanges = () => {
           />
           <div
             className=" desktop:text-4xl laptop:text-5xl text-3xl
-         4k:text-5xl font-semibold text-white "
+         4k:text-5xl font-semibold text-white font-sora"
           >
             <p>Transform The</p>
             <p>Transport Experience</p>

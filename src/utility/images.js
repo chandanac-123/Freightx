@@ -15,6 +15,7 @@ import phone_icon from "../../public/phone.svg";
 import banner_1 from "../../public/banner_1.jpg";
 import banner_2 from "../../public/banner_2.jpg";
 import banner_3 from "../../public/banner_3.jpg";
+import banner_4 from "../../public/banner_4.webp";
 import info from "../../public/info_img.jpg";
 import ocean from "../../public/ocean.svg";
 import sample from "../../public/sample.jpg";
@@ -30,7 +31,7 @@ import road_transport from "../../public/road.jpg"
 import custome_clear from "../../public/custome.jpg"
 import projects from "../../public/projects.jpg"
 import warehouse from "../../public/warehousing.jpg"
-import logo from "../../public/logo.jpg"
+import logo from "../../public/logo.svg"
 import logo2 from "../../public/logo2.png"
 
 
@@ -49,6 +50,7 @@ export const images = {
   banner_1,
   banner_2,
   banner_3,
+  banner_4,
   info,
   ocean,
   sample,

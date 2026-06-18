@@ -1,31 +1,32 @@
 export default function AboutMission() {
   return (
-    <div className="grid container max-w-screen-4k grid-cols-2 xl:grid-cols-2 gap-x-20 gap-y-10 px-6 py-2 md:px-12 xl:px-12 xl:py-1">
+    <div className="container max-w-screen-4k mx-auto grid grid-cols-1 md:grid-cols-2 gap-10 md:gap-16 xl:gap-20 px-4 sm:px-6 md:px-12 ">
+
+      {/* Mission */}
       <div>
-        <h1 className="text-text-primary font-semibold text-4xl leading-[52px] md:leading-[48px] xl:text-5xl font-inter whitespace-pre-line">
+        <h1 className="text-text-primary font-sora font-semibold text-3xl sm:text-4xl xl:text-5xl leading-tight font-inter">
           Mission
         </h1>
-        <div className="md:max-w-[480px] xl:max-w-full">
-          <h6 className="text-black mt-5 font-sora">
-            To serve freight forwarders worldwide with neutral logistics
-            solutions, handling shipments to and from the U.S. with integrity,
-            efficiency, and transparency.
-          </h6>
-        </div>
+
+        <h6 className="text-black mt-4 sm:mt-5 font-inter text-base sm:text-lg leading-relaxed">
+          To serve freight forwarders worldwide with neutral logistics
+          solutions, handling shipments to and from the U.S. with integrity,
+          efficiency, and transparency.
+        </h6>
       </div>
-      <div className="md:max-w-[480px] xl:max-w-full">
-        <div>
-          <h1 className="text-text-primary font-semibold text-4xl leading-[52px] md:leading-[48px] xl:text-5xl font-inter whitespace-pre-line">
-            Vision
-          </h1>
-          <div className="md:max-w-[480px] xl:max-w-full">
-            <h6 className="text-black mt-5 font-sora">
-              To be recognized as the leading neutral logistics service provider
-              in the USA, trusted by freight forwarders across the globe.
-            </h6>
-          </div>
-        </div>
+
+      {/* Vision */}
+      <div>
+        <h1 className="text-text-primary font-sora font-semibold text-3xl sm:text-4xl xl:text-5xl leading-tight font-inter">
+          Vision
+        </h1>
+
+        <h6 className="text-black mt-4 sm:mt-5 font-inter text-base sm:text-lg leading-relaxed">
+          To be recognized as the leading neutral logistics service provider
+          in the USA, trusted by freight forwarders across the globe.
+        </h6>
       </div>
+
     </div>
   );
 }

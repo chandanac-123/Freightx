@@ -11,6 +11,11 @@ export const header_options = [
   },
   {
     id: 3,
+    title: "Services.",
+    url: "/services",
+  },
+  {
+    id: 4,
     title: "Contact.",
     url: "/contact-us",
   },

@@ -15,12 +15,12 @@ const Info = () => {
     <div className="py-16 tablet:py-16 flex flex-col-reverse tablet-lg:flex-row items-center gap-6">
       {/* Left Section - Text Content */}
       <div className="tablet-lg:w-1/2 px-6 tablet-lg:pl-20 laptop-lg:pl-32 desktop:pl-40 4k:pl-56">
-        <h1 className="text-4xl laptop:text-5xl font-semibold mb-6 text-dark max-w-[500px]">
+        <h1 className="text-4xl laptop:text-5xl font-semibold mb-6 text-dark font-sora max-w-[500px]">
           Fast Delivery And Secure Packages
         </h1>
 
         {/* Intro Paragraphs */}
-        <div className="flex-1 space-y-6">
+        <div className="flex-1 space-y-6 font-inter">
           <p>
             Welcome to FreightX Shipping Inc (Fx) - Neutral Logistic Solutions
             for freight forwarders and businesses worldwide. Headquartered in

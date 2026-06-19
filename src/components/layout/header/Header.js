@@ -23,7 +23,7 @@ export default function Header() {
         </div>
 
 
-        <div className="grow hidden xl:flex gap-4 h-full flex justify-end">
+        <div className="grow hidden xl:flex gap-4 h-full justify-end">
           {header_options.map((item) => (
             <Link
               key={item.id}

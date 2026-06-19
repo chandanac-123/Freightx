@@ -1,45 +1,51 @@
 "use client";
 
 import { header_options } from "@/enum/header_options";
-import { images } from "@/utility/images";
 import { Divide as Hamburger } from "hamburger-react";
-import Image from "next/image";
 import Link from "next/link";
+import { usePathname } from "next/navigation";
 import { useState } from "react";
 
 export default function MobileHeader() {
   const [isOpen, setOpen] = useState(false);
+  const pathname = usePathname();
 
   return (
-    <>
-      <div className="flex xl:hidden relative bg-surface-secondary h-full items-center justify-center w-16">
-        <Hamburger color="white" size={20} toggled={isOpen} toggle={setOpen} />
-        <div
-          className="w-screen z-10 p-10 bg-white  absolute overflow-hidden origin-top top-full transition-transform  -right-8 flex flex-col gap-5 border-b border-surface-border"
-          style={{ transform: isOpen ? "scaleY(1)" : "scaleY(0)" }}
-        >
+    <div className="relative flex xl:hidden h-full items-center">
+      <div className="flex h-12 w-12 items-center justify-center bg-surface-secondary">
+        <Hamburger
+          color="white"
+          size={22}
+          toggled={isOpen}
+          toggle={setOpen}
+        />
+      </div>
+
+      <div
+        className={`absolute top-full right-0 w-72 bg-white rounded-b-xl shadow-2xl overflow-hidden transition-all duration-300 ease-in-out z-50 ${
+          isOpen
+            ? "opacity-100 translate-y-0 visible"
+            : "opacity-0 -translate-y-2 invisible"
+        }`}
+      >
+        <nav className="py-2">
           {header_options.map((item) => (
             <Link
-              onClick={() => setOpen(false)}
-              href={item.url}
-              className="text-lg h-full group font-semibold flex items-center gap-2 hover:cursor-pointer"
               key={item.id}
+              href={item.url}
+              onClick={() => setOpen(false)}
+              className={`flex items-center px-6 py-4 text-base font-medium transition-colors duration-200
+                ${
+                  pathname === item.url
+                    ? "bg-surface-secondary text-white"
+                    : "text-text-primary hover:bg-gray-100"
+                }`}
             >
-              <span className="w-7 h-7 flex items-center justify-center">
-                <Image
-                  className="w-7 h-7 -ml-5 group-hover:ml-0 opacity-0 invisible group-hover:opacity-100 group-hover:visible transition-all duration-500"
-                  alt="Hover Icon"
-                  src={images.hover_icon}
-                  width={28}
-                  height={28}
-                  priority
-                />
-              </span>
-              <span className="text-text-primary">{item.title}</span>
+              {item.title}
             </Link>
           ))}
-        </div>
+        </nav>
       </div>
-    </>
+    </div>
   );
 }

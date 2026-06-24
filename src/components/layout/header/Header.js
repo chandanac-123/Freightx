@@ -12,14 +12,14 @@ export default function Header() {
     <header className="h-24 bg-text-primary border-gray-300 flex  gap-16">
       <div className="container flex items-center  justify-between">
 
-        <div className="flex flex-col">
+        <div className="flex gap-2 flex-col">
           <Image
             alt="Logo"
             src={images.logo}
-            width={250}
+            width={180}
             priority
           />
-          <span className="text-surface-border text-center text-sm">Neutral Logistic Solutions</span>
+          <span className="text-surface-border text-center text-xs">Neutral Logistic Solutions</span>
         </div>
 
 

@@ -1,5 +1,5 @@
-import GetInTouch from "@/components/common/GetInTouch";
 import Banner from "@/components/home-page/Banner";
+import GetInTouch from "@/components/home-page/GetInTouch";
 import Info from "@/components/home-page/Info";
 import MakeChanges from "@/components/home-page/MakeChanges";
 import MovigBanner from "@/components/home-page/MovigBanner";

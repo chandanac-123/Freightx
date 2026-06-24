@@ -1,9 +1,12 @@
+'use client'
 import { images } from "@/utility/images";
 import Image from "next/image";
+import { useRouter } from "next/navigation";
 
 const ServiceCard = ({ service }) => {
+  const router = useRouter();
   return (
-    <div className="relative h-80 rounded-xl overflow-hidden group">
+    <div className="relative h-80 rounded-xl overflow-hidden group" onClick={() => router.push(`/services`)}>
       {/* Background Image */}
       <Image
         src={service.picture}
@@ -21,7 +24,7 @@ const ServiceCard = ({ service }) => {
       </div>
       {/* Description - Center */}
       <div className="absolute inset-0 flex items-end p-6 z-10">
-        <p className="text-white text-sm leading-relaxed max-w-sm font-inter">
+        <p className="text-white text-md leading-relaxed max-w-sm font-inter">
           {service.content}
         </p>
       </div>

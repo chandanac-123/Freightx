@@ -20,7 +20,7 @@ const Info = () => {
         </h1>
 
         {/* Intro Paragraphs */}
-        <div className="flex-1 space-y-6 font-inter">
+        <div className="flex-1 text-lg space-y-6 font-inter">
           <p>
             Welcome to FreightX Shipping Inc (Fx) - Neutral Logistic Solutions
             for freight forwarders and businesses worldwide. Headquartered in

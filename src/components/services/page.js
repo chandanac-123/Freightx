@@ -73,7 +73,7 @@ const Services = () => {
             Reliable Logistics Solutions
           </h2>
 
-          <p className="text-gray-500 max-w-3xl mx-auto mt-6 font-inter">
+          <p className="text-gray-500 max-w-3xl text-lg mx-auto mt-6 font-inter">
             End-to-end freight forwarding, transportation, and customs
             solutions designed to move your cargo efficiently across the globe.
           </p>

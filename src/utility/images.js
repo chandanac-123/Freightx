@@ -31,7 +31,7 @@ import road_transport from "../../public/road.jpg"
 import custome_clear from "../../public/custome.jpg"
 import projects from "../../public/projects.jpg"
 import warehouse from "../../public/warehousing.jpg"
-import logo from "../../public/logo.svg"
+import logo from "../../public/logo.png"
 import logo2 from "../../public/logo2.png"
 
 

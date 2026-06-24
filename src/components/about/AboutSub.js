@@ -7,18 +7,15 @@ export default function AboutSub() {
           <br />
           And Domestic Shipments
         </h1>
-        <h6 className="text-black mt-1 font-inter whitespace-nowrap">
-          Main areas - logistics and terminal.
-        </h6>
         <div className="w-full">
-          <h6 className="text-black mt-8 font-inter">
+          <h6 className="text-black text-lg mt-8 font-inter">
             At FreightX Shipping Inc (Fx), our core competency is 100%
             NEUTRALITY. Unlike traditional providers, Fx works exclusively with
             freight forwarders worldwide, never competing with them. Instead, we
             act as their own U.S. office, managing air, sea, and land shipments
             with confidentiality and professionalism.
           </h6>
-          <h6 className="text-black mt-2 font-inter">
+          <h6 className="text-black mt-2 text-lg font-inter">
             Our mission is to make freight movement from the U.S. to the world
             easy, transparent, and efficient. Fx continuously trains its staff
             to work smarter, ensuring that no forwarder is ever left in the dark

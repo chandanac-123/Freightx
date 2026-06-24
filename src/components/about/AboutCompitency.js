@@ -67,7 +67,7 @@ const CoreValuesSection = () => {
             </h3>
 
             {/* Description */}
-            <p className="text-gray-600 text-sm leading-relaxed font-inter">
+            <p className="text-gray-600 text-lg leading-relaxed font-inter">
               {item.description}
             </p>
           </div>

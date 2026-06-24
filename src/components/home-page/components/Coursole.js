@@ -10,7 +10,7 @@ const Coursole = () => {
     {
       id: 1,
       img: images.banner_2,
-      title: 'Global Logistics Solutions',
+      title: 'Freight X Shipping ',
       description:
         'Reliable freight forwarding and transportation services worldwide.',
     },
@@ -71,7 +71,7 @@ const Coursole = () => {
           />
 
           {/* Overlay */}
-          <div className="absolute inset-0 bg-black/40 z-10" />
+          <div className="absolute inset-0 bg-black/70 z-10" />
         </div>
       ))}
 
@@ -80,11 +80,11 @@ const Coursole = () => {
         key={currentIndex}
         className="absolute z-20 top-1/2 left-6 md:left-16 -translate-y-1/2 text-white max-w-3xl animate-fadeIn"
       >
-        <h1 className="text-3xl sm:text-5xl md:text-6xl font-bold leading-tight">
+        <h1 className="text-3xl sm:text-5xl md:text-6xl font-extrabold leading-tight">
           {slides[currentIndex].title}
         </h1>
 
-        <p className="mt-4 text-base sm:text-lg md:text-xl max-w-2xl text-white/90">
+        <p className="mt-4 text-base sm:text-lg md:text-xl max-w-2xl text-white">
           {slides[currentIndex].description}
         </p>
       </div>
